@@ -1,0 +1,22 @@
+{% extends 'core.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="text-center">URL Details</h3>
+                </div>
+                <div class="card-body">
+                    <p class="lead">Original URL: <a href="{{ obj.originalUrl }}">{{ obj.originalUrl }}</a></p>
+                    <p class="lead">Shortened URL: <a href="{{ obj.shortUrl }}">{{ obj.shortUrl }}</a></p>
+                    <div class="text-center">
+                        <a href="{{ obj.originalUrl }}" class="btn btn-primary">Go to Website</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
